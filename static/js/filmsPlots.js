@@ -52,6 +52,7 @@ let indexmapArray = rating.map(function(item, index) {
 
 console.log(indexmapArray);
 
+// ------------------------------------------------
 // Now examples with array of objects
 
 let students = [
@@ -91,7 +92,26 @@ console.log(left);
 let right = firstName.slice(2, 4);
 console.log(right);
 
-// Sorting the array descending is (b-a)
+// ----------------------------------------------------
+// To sort it alphabatically
+firstName.sort();
+console.log(firstName);
 
+// Sorting the array descending is (b-a)
+numArray = [1, 2, 3]
+numArray.sort(function(a, b) {
+    return b-a;
+});
+console.log(numArray)
+
+// Sorting the array ascending is (b-a)
+numArray.sort(function(a, b) {
+    return a-b;
+});
+console.log(numArray)
+
+//  We can replace with fat arrow
+numArray.sort((a, b) => a - b);
+console.log(numArray)
 
 
