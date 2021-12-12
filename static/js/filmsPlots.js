@@ -93,9 +93,9 @@ let right = firstName.slice(2, 4);
 console.log(right);
 
 // ----------------------------------------------------
-// To sort it alphabatically
-firstName.sort();
-console.log(firstName);
+// To sort it alphabatically without changing the original array
+newArray = firstName.sort();
+console.log(newArray);
 
 // Sorting the array descending is (b-a)
 numArray = [1, 2, 3]
